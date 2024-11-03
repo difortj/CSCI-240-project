@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aircraft Carriers Table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aircraft Carriers</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Carrier ID</th>
+                <th>Ship ID</th>
+                <th>Number of Aircraft</th>
+                <th>Runway Length (ft)</th>
+                <th>Commission Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>CV-6</td>
+                <td>1</td>
+                <td>96</td>
+                <td>809</td>
+                <td>1938-05-12</td>
+            </tr>
+            <tr>
+                <td>CV-5</td>
+                <td>2</td>
+                <td>90</td>
+                <td>824</td>
+                <td>1937-09-30</td>
+            </tr>
+            <tr>
+                <td>CV-8</td>
+                <td>3</td>
+                <td>72</td>
+                <td>824</td>
+                <td>1941-10-20</td>
+            </tr>
+            <tr>
+                <td>CV-2</td>
+                <td>4</td>
+                <td>78</td>
+                <td>888</td>
+                <td>1927-12-14</td>
+            </tr>
+            <tr>
+                <td>IJN-1</td>
+                <td>5</td>
+                <td>91</td>
+                <td>855</td>
+                <td>1927-03-25</td>
+            </tr>
+            <tr>
+                <td>IJN-2</td>
+                <td>6</td>
+                <td>90</td>
+                <td>812</td>
+                <td>1929-11-30</td>
+            </tr>
+            <tr>
+                <td>{{ carrier_id }}</td>
+                <td>{{ ship_id }}</td>
+                <td>{{ num_aircraft }}</td>
+                <td>{{ runway_length }}</td>
+                <td>{{ commission_date }}</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
