@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Battle Operations</title>
+</head>
+<body>
+    <h1>Operations for {{ battle['Name'] }}</h1>
+    <ul>
+        {% for operation in operations %}
+        <li>{{ operation['ShipName'] }} - {{ operation['Shipoutcome'] }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Back to List</a>
+</body>
+</html>

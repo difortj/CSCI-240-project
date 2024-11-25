@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Operation</title>
+</head>
+<body>
+    <h1>Add Operation</h1>
+    <form method="post">
+        <label for="ship_id">Ship:</label>
+        <select id="ship_id" name="ship_id">
+            {% for ship in ships %}
+            <option value="{{ ship['ShipID'] }}">{{ ship['Name'] }}</option>
+            {% endfor %}
+        </select><br>
+        <label for="battle_id">Battle:</label>
+        <select id="battle_id" name="battle_id">
+            {% for battle in battles %}
+            <option value="{{ battle['BattleID'] }}">{{ battle['Name'] }}</option>
+            {% endfor %}
+        </select><br>
+        <label for="ship_outcome">Outcome:</label>
+        <input type="text" id="ship_outcome" name="ship_outcome"><br>
+        <input type="submit" value="Add">
+    </form>
+    <a href="/">Back to List</a>
+</body>
+</html>

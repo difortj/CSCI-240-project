@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ships and Battles</title>
+</head>
+<body>
+    <h1>Ships</h1>
+    <ul>
+        {% for ship in ships %}
+        <li><a href="{{ url_for('ship_operations', ship_id=ship['ShipID']) }}">{{ ship['Name'] }}</a></li>
+        {% endfor %}
+    </ul>
+
+    <h1>Battles</h1>
+    <ul>
+        {% for battle in battles %}
+        <li><a href="{{ url_for('battle_operations', battle_id=battle['BattleID']) }}">{{ battle['Name'] }}</a></li>
+        {% endfor %}
+    </ul>
+
+    <a href="/add_operation">Add New Operation</a>
+</body>
+</html>
